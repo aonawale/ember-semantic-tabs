@@ -4,9 +4,21 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-semantic-tabs`
-* `npm install`
+  `ember install ember-semantic-tabs`
+
+## Usage
+
+```
+  {{ui-tab text="All" id="all" selectedTab=selectedTab onChange=(action (mut selectedTab))}}
+```
+
+with block
+
+```
+  {{#ui-tab id="all" selectedTab=selectedTab onChange=(action (mut selectedTab))}}
+    All
+  {{/ui-tab}}
+```
 
 ## Running
 

@@ -11,8 +11,8 @@ export default Component.extend({
   classNameBindings: ['isSelected:active'],
 
   propTypes: { //eslint-disable-line
+    text: PropTypes.string,
     id: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired
   },
 
