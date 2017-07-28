@@ -1,0 +1,1 @@
+export { default } from 'ember-semantic-tabs/components/ui-tab';
