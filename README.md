@@ -1,6 +1,6 @@
 # ember-semantic-tabs
 
-This README outlines the details of collaborating on this Ember addon.
+The missing ui-tab component in ember-semantic addon.
 
 ## Installation
 
@@ -9,13 +9,13 @@ This README outlines the details of collaborating on this Ember addon.
 ## Usage
 
 ```
-  {{ui-tab text="All" id="all" selectedTab=selectedTab onChange=(action (mut selectedTab))}}
+  {{ui-tab text="All" id="all" selectedTab=selectedTab onSelect=(action (mut selectedTab))}}
 ```
 
 with block
 
 ```
-  {{#ui-tab id="all" selectedTab=selectedTab onChange=(action (mut selectedTab))}}
+  {{#ui-tab id="all" selectedTab=selectedTab onSelect=(action (mut selectedTab))}}
     All
   {{/ui-tab}}
 ```

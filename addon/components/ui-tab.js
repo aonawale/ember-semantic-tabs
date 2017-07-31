@@ -13,7 +13,7 @@ export default Component.extend({
   propTypes: { //eslint-disable-line
     text: PropTypes.string,
     id: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired
+    onSelect: PropTypes.func.isRequired
   },
 
   isSelected: computed('id', 'selectedTab', function() {
@@ -21,6 +21,6 @@ export default Component.extend({
   }),
 
   click() {
-    this.onChange && this.onChange(get(this, 'id'));
+    this.onSelect && this.onSelect(get(this, 'id'));
   }
 });
